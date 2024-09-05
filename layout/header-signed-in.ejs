@@ -17,7 +17,7 @@
                 Dropdown
               </a>
               <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item dropdown-item-primary" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li>
                   <hr class="dropdown-divider">
@@ -345,17 +345,124 @@
     <div class="d-flex">
       <!-- 登入註冊框  -->
       <div class=" d-flex align-items-center gap-lg-3">
-        <a href="#" class="px-2a py-2 d-flex">
-          <span class="material-symbols-outlined icon-m">
-            notifications
-            </span>      
-        </a>
+        <div class="btn-group">
+          <a href="#" class="px-2a py-2 d-flex notifications" id="dropdownMenuButton" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+            <span class="material-symbols-outlined icon-m">
+              notifications
+              </span>
+            <div class="position-relative">
+              <span class="position-absolute top-0 start-100 translate-middle d-block bg-primary rounded-circle badge-sm"></span>
+            </div>
+          </a>       
+          <ul class="dropdown-menu message-style py-5 px-2a bg-gray-40" aria-labelledby="dropdownMenuButton">
+            <li>
+              <a href="#" class="p-0 d-flex gap-2 text-primary text-style-body-sm outline">
+                <span class="material-symbols-outlined fill fs-18">
+                  check_circle
+                </span>
+                全部標記為已讀
+              </a>
+            </li>
+            <li><hr class="dropdown-divider my-3"></li>
+            <li>
+              <a href="#" class="dropdown-item p-0 d-flex gap-2">
+                <div class="">
+                  <img class="icon-m img-gray me-2" src="../assets/images/icons/ic_campaign.png" alt="ic_campaign">
+                </div>
+                <div class="">
+                  <span class="d-block">系統通知：6 月 30 日 02:00 網站系統排程更新</span>
+                  <span class="d-block text-style-body-sm text-gray-60">4 天前</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="dropdown-item p-0 d-flex gap-2">
+                <div class="">
+                  <img class="icon-m img-gray me-2" src="../assets/images/icons/ic_notifications.png" alt="">
+                </div>
+                <div class="">
+                  <span class="d-block">募資開課：您購買的募資課程已成功開課！將於 3 天後公布課綱！</span>
+                  <span class="d-block text-style-body-sm text-gray-60">4 天前</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="dropdown-item p-0 d-flex gap-2">
+                <div class="w-fit-content">
+                  <img class="icon-m img-gray me-2" src="../assets/images/icons/ic_notifications.png" alt="">
+                </div>
+                <div class="">
+                  <span class="d-block">募資開課：您購買的募資課程已成功開課！將於 3 天後公布課綱！</span>
+                  <span class="d-block text-style-body-sm text-gray-60">4 天前</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>   
         <a href="#" class="d-flex px-2a py-2">
           <span class="material-symbols-outlined icon-m">
             shopping_cart
           </span>
+          <div class="position-relative">
+            <span class="position-absolute top-0 start-100 translate-middle text-style-tiny bg-primary text-white text-center rounded-circle badge-m">2</span>
+          </div>
         </a>
-        <button class="d-lg-block d-none btn btn-primary">登入 / 註冊</button>
+        <div class="btn-group">
+          <a href="#" class="d-lg-block d-none dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <img class="icon-lg" src="../assets/images/avatar-1.png" alt="avatar-1">
+            Jessica
+          </a>          
+          <ul class="dropdown-menu py-5 px-2a" aria-labelledby="dropdownMenuButton">
+            <li>
+              <a href="#" class="dropdown-item p-0 d-flex gap-2">
+                <img class="icon-lg" src="../assets/images/avatar-1.png" alt="avatar-1">
+                <div class="">
+                  <span class="d-block">Jessica</span>
+                  <span class="d-block text-style-body-sm text-gray-60">學習初心者</span>
+                </div>
+              </a>
+            </li>
+            <li><hr class="dropdown-divider my-3"></li>
+            <li>
+              <a class="dropdown-item py-2a px-5 dropdown-item-primary w-fit-content" href="#">
+                <img class="icon-m img-gray me-2" src="../assets/images/icons/ic_profile.png" alt="ic_profile">
+                個人檔案
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2a px-5 dropdown-item-primary" href="#">
+                <img class="icon-m img-gray me-2" src="../assets/images/icons/ic_fav.png" alt="">
+                我的收藏
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2a px-5 dropdown-item-primary" href="#">
+                <img class="icon-m img-gray me-2" src="../assets/images/icons/ic_setting.png" alt="">
+                帳號設定
+              </a>
+            </li>
+            <li><hr class="dropdown-divider my-3"></li>
+            <li>
+              <a class="dropdown-item py-2a px-5 dropdown-item-primary" href="#">
+                <img class="icon-m img-gray me-2" src="../assets/images/icons/ic_order.png" alt="">
+                訂單記錄
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2a px-5 dropdown-item-primary" href="#">
+                <img class="icon-m img-gray me-2" src="../assets/images/icons/ic_edit.png" alt="">
+                作業成果
+              </a>
+            </li>
+            <li><hr class="dropdown-divider my-3"></li>
+            <li>
+              <a class="dropdown-item py-2a px-5 dropdown-item-primary" href="#">
+                <img class="icon-m img-gray me-2" src="../assets/images/icons/ic_logout.png" alt="">
+                登出
+              </a>
+            </li>
+          </ul>
+        </div>        
       </div>    
       <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon fs-6"></span>

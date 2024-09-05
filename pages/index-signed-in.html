@@ -7,7 +7,7 @@
     <title>index</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
+    <%- include('./layout/header-signed-in'); -%>
     <!-- banner -->
     <div class="position-relative mb-lg-9">
       <div class="swiper mySwiper position-relative container-lg px-lg-6 px-0">
@@ -97,7 +97,7 @@
       </div>
     </div>
     <!-- 火熱募資課程 -->
-     <div class="py-lg-12 py-10 background-img position-relative">
+     <div class="py-lg-12 py-10 position-relative">
        <div class="container-lg z-index-lg position-relative">
         <div class="d-flex flex-lg-row flex-column justify-content-between">
           <div class="w-lg-32">
@@ -233,9 +233,10 @@
           <button class="d-block d-lg-none btn btn-primary">更多募資課程</button>
         </div>
        </div>
+      <img src="../assets/images/deco/flower-2.png" alt="flower-2" class="position-absolute top-0 start-minus-100 flower-2-size">
     </div>
     <!-- 看看大家都買了什麼 -->
-    <div class="py-lg-12 py-10 position-relative bg-primary-linear background-img-2">
+    <div class="py-lg-12 py-10 position-relative bg-primary-linear">
       <div class="container-lg p-lg-0">
         <div class="d-flex flex-column align-items-lg-center position-relative">
          <div class="position-relative mb-lg-7 mb-5">
@@ -416,6 +417,7 @@
           </div>                             
        </div>
       </div>
+      <img src="../assets/images/deco/flower-3.png" alt="flower-3" class="position-absolute top-50 start-0 translate-middle">
     </div>
     <!-- 想學什麼嗎？ -->
      <div class="py-lg-12 py-7 px-lg-0 px-2a">
@@ -522,7 +524,7 @@
        </div>      
      </div>
      <!-- 頂尖講師帶你飛 -->
-     <div class="py-lg-12 py-10 position-relative background-img-3 overflow-h">
+     <div class="py-lg-12 py-10 position-relative overflow-h">
       <div class="container-lg p-lg-0 position-relative">
         <div class="d-flex flex-column align-items-lg-center position-relative">
          <div class="position-relative mb-lg-7 mb-5">
@@ -536,7 +538,7 @@
         <!-- Swiper -->
         <div class="swiper mySwiper4">
           <div class="swiper-wrapper">
-            <div class="swiper-slide card-width">
+            <div class="swiper-slide">
               <div class="p-0 position-relative">
                 <div class="row justify-content-end">
                   <div class="col-10">
@@ -564,7 +566,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide card-width">
+            <div class="swiper-slide">
               <div class="p-0 position-relative">
                 <div class="row justify-content-end">
                   <div class="col-10">
@@ -595,7 +597,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide card-width">
+            <div class="swiper-slide">
               <div class="p-0 position-relative">
                 <div class="row justify-content-end">
                   <div class="col-10">
@@ -630,20 +632,8 @@
           </div>
           <div class="swiper-pagination swiper-pagination-4 d-lg-none d-block my-5 position-static"></div>
         </div>
-        <div class="d-none row">
-          <div class="col-4">
-            <div class="card">
-              <img src="../assets/images/teacher-1.png" class="card-img-top ms-lg-10 w-auto" alt="...">
-              <div class="card-body bg-white me-6 outline mt-minus-40">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>            
-          </div>
-        </div>
       </div>
-      <!-- <img src="../assets/images/deco/line-1.png" alt="line-1" class="d-lg-block d-none position-absolute line-1-pos "> -->
+      <img src="../assets/images/deco/line-1.png" alt="line-1" class="d-lg-block d-none position-absolute line-1-pos ">
     </div>      
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>

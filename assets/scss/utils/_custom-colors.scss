@@ -1,0 +1,83 @@
+// 自定義
+$primary-base: #0068FF;
+$primary-dark: #003BB7;
+$primary-80: #3F95FF;
+$primary-60: #66B1FF;
+$primary-40: #99CFFF;
+$primary-tint: #E5F4FF;
+
+$success-base: #7CD31F;
+$success-120: #48970F;
+$success-20: #DDFAA5;
+$success-10: #F0FCD1;
+
+$info-base: #2AAFFC;
+$info-120: #1566B5;
+$info-10: #D4F9FE;
+$info-20: #A9EFFE;
+
+$alert-base: #FF3A55;
+$alert-120: #B71D4F;
+$alert-20: #FFBBB0;
+$alert-10: #FFE0D7;
+
+$gray-120: #282828;
+$gray-80: #4B4B4B;
+$gray-60: #909090;
+$gray-50: #D4D4D4;
+$gray-40: #ECECEC;
+$gray-10: #F9F9F9;
+
+$mandarin: #FF994F;
+$dark-gray: #5E5E5E;
+$gray-light: #6E7485;
+$rose: #FF9BAD;
+$violet: #564FFD;
+$ocean: #54DFF2;
+$tree: #52E9BC;
+$light-violet: #CF93FF;
+
+$custom-colors: (
+  //自定義
+  "primary":    $primary-base, //$primary,
+  "success":    $success-base, //$success,
+  "info":       $info-base, //$info,
+  
+  "primary-dark": $primary-dark,
+  "primary-80": $primary-80,
+  "primary-60": $primary-60,
+  "primary-40": $primary-40,
+  "primary-tint": $primary-tint,
+
+  "success-120": $success-120,
+  "success-20": $success-20,
+  "success-10": $success-10,
+
+  "info-120": $info-120,
+  "info-20": $info-10,
+  "info-10": $info-20,
+
+  "alert": $alert-base,
+  "alert-120": $alert-120,
+  "alert-20": $alert-20,
+  "alert-10": $alert-10,
+
+  "black": $black,
+  "gray-120": $gray-120,
+  "gray-80": $gray-80,
+  "gray-60": $gray-60,
+  "gray-50": $gray-50,
+  "gray-40": $gray-40,
+  "gray-10": $gray-10,
+  
+  "mandarin": $mandarin,
+  "dark-gray": $dark-gray,
+  "gray-light": $gray-light,
+  "rose": $rose,
+  "violet": $violet,
+  "light-violet": $light-violet,
+  "ocean": $ocean,
+  "tree": $tree,
+
+);
+$theme-colors: map-merge($custom-colors, $theme-colors);

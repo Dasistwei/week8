@@ -1,0 +1,45 @@
+
+
+$utilities: map-merge(
+  $utilities, (
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      ( responsive: true ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "rounded": map-merge(
+      map-get($utilities, "rounded"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "rounded"), "values"),
+          (
+            4: $border-radius-main, // 12
+            5: $border-radius-xl, // 16
+            5a: $border-radius-secondary, // 20
+            5b: 40px, // 40
+            6: $border-radius-great, // 80
+            7: $border-radius-greater, // 100
+          ),
+        ),
+      ),
+    ),
+  )
+);
+// "rounded": (
+//   property: border-radius,
+//   class: rounded,
+//   values: (
+//     null: $border-radius,
+//     0: 0,
+//     1: $border-radius-sm,
+//     2: $border-radius,
+//     3: $border-radius-lg,
+//     circle: 50%,
+//     pill: $border-radius-pill
+//   )
+// ),

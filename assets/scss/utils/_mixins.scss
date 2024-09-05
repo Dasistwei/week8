@@ -1,0 +1,31 @@
+@mixin desktop{
+  @media screen and (min-width: 992px){
+    @content;
+  }
+}
+@mixin mobile{
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+// @mixin list-group-item-variant($gray-40, $gray-40, $gray-80) {
+//   .list-group-item-#{$state} {
+//     color: $color;
+//     background-color: $background;
+
+//     &.list-group-item-action {
+//       &:hover,
+//       &:focus {
+//         color: $color;
+//         background-color: shade-color($background, 10%);
+//       }
+
+//       &.active {
+//         color: $white;
+//         background-color: $color;
+//         border-color: $color;
+//       }
+//     }
+//   }
+// }

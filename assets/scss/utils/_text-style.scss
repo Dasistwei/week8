@@ -1,0 +1,27 @@
+$bold: 600;
+$regular: 400;
+.text-style-{
+  &title{
+    font-size: 16px;
+    font-weight: $bold;
+  }
+  &subtitle{
+    font-size: 14px;
+    font-weight: $bold;
+  }
+  &body{
+    font-size: 16px;
+    font-weight: $regular;
+  }
+  &body-sm{
+    font-size: 14px;
+    font-weight: $regular;
+  }
+  &tiny{
+    font-size: 12px;
+    font-weight: $regular;
+  }
+}
+.fs-18{
+  font-size: 18px;
+}

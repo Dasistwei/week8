@@ -1,3 +1,485 @@
-.index-title {
-  font-size: 100px;
+.outline{
+  outline: 1px solid red;
+}
+.outline-1{
+  outline: 1px solid  blue;
+}
+.border-style{
+  @include desktop{
+    box-shadow: 0px 2px 40px 0px rgba(0, 104, 255, 0.1);
+    border-radius: 100px;
+  }
+}
+.logo-size{
+  width: 125px;
+  @include desktop{
+    width: 200px;
+  }
+}
+.input-fit-placeholder{
+  field-sizing: content;
+}
+
+.focus-outline{
+  > input::placeholder{
+    color: $gray-60;
+  }
+  > input:focus{
+    outline: none !important;
+  }
+
+}
+.w-83{
+  width: 83%;
+}
+.w-86{
+  // width: 86%;
+  max-width: 1656px;
+}
+@include desktop{
+  .w-lg-66{
+    width: 66%;
+  }
+  .w-lg-32{
+    width: 32%;
+  }
+}
+.lh-base{
+  line-height: 1.5;
+}
+.icon-m{
+  width: 24px;
+  height: 24px;
+}
+.icon-lg{
+  width: 44px;
+  height: 44px;
+}
+.icon-xm{
+  width: 40px;
+  height: 40px;
+}
+.fs-great{
+  @include desktop{
+    &-lg{
+      font-size: 44px;
+    }
+  }
+}
+.rounded-lg-6{
+  border-radius: 40px;
+  @include desktop{
+    border-radius: 100px;
+  }
+}
+.rounded-lg-top-6{
+  border-radius: 48px 48px 0 0  ;
+  @include desktop{
+    border-radius: 80px 80px 0 0 ;
+  }
+}
+.card-img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.l-spacing-m{
+  letter-spacing: 0.02em !important;
+}
+.badge-sm{
+  width: 8px;
+  height: 8px;
+}
+.badge-m{
+  width: 16px;
+  height: 16px;
+}
+.dropdown-menu-size{
+  width: 863px;
+  max-height: 600px;
+}
+.dropdown-menu-option-width{
+  width: 232px;
+}
+.dropdown-menu-option-width, .dropdown-menu-content-width{
+  max-height: 600px;
+  overflow-y: scroll;
+  >a.dropdown-item{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    padding: 12px 12px 12px 24px;
+  }
+}
+.dropdown-menu-content-width{
+  width: 399px;
+}
+.list-group-item-gray-10 {
+  color: $gray-80;
+  background-color: $gray-10;
+
+  &.list-group-item-action {
+    &:hover{
+      color: $gray-80;
+      background-color: shade-color($gray-10, 10%);
+    }
+    &:focus {
+      color: white;
+      background-color: $primary;
+    }
+
+    &.active {
+      color: $white;
+      background-color: $primary;
+      border-color: $gray-80;
+    }
+  }
+}
+.material-symbols-outlined.fill{
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.banner-border{
+  @include desktop{
+    border-bottom-left-radius: 80px;
+    border-top-right-radius: 80px;
+  }
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+.swiper-navigation{
+  background: white;
+  opacity: 1;
+  width: 56px;
+  height: 56px;
+  &:active, &:hover{
+    background: $primary;
+    color: white !important;
+  }
+  &.swiper-button-next{
+  }
+}
+.w-fit-content{
+  width: fit-content;
+  @include desktop{
+    &-lg{
+      width: fit-content;
+    }
+  }
+}
+
+.align-self-start{
+  @include desktop{
+    &-lg{
+      align-self:flex-start;
+    }
+  }
+}
+.badge-width-fix{
+  min-width: 99px;
+}
+.mb-m{
+  margin-bottom: 97px;
+}
+
+.mySwiper {
+  width: 100%;
+  height:fit-content
+}
+
+.swiper-slide-1 {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include desktop{
+    max-width: 1600px;
+    height: 648px;
+  }
+}
+
+.swiper-slide-1 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet{
+  background-color: $gray-40 !important;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: $primary-base !important;
+  width: 24px;
+  border-radius: 100px;
+}
+.bottom-sm{
+  bottom: 18.1% !important;
+}
+.flower-4-position{
+  top: -300px;
+  z-index: 100;
+  object-fit: cover;
+}
+.z-index-sm{
+  z-index: 1 !important;
+}
+.z-index-lg{
+  z-index: 100;
+}
+.z-index-xl{
+  z-index: 1000 !important;
+}
+.card-shadow{
+  box-shadow: 0px 25px 50px -12px rgba(0, 0,
+0, 12%);
+}
+.start-minus-100{
+  left: -100px;
+}
+.flower-2-size{
+  width: 200px;
+  height: 200px;
+  @include desktop{
+    width: 560px;
+    height: 560px;
+  }
+}
+.overflow-x{
+  white-space:nowrap;
+  overflow: auto;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+  &::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+  }
+}
+
+.h-fit-content{
+  height: auto;
+}
+
+.mySwiper-parent-h{
+  max-height: 1008px;
+}
+.mySwiper2 {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide-2 {
+}
+.bg-primary-linear{
+  background: linear-gradient(180deg, #F0F6FF 0%, #FFFFFF 100%);
+}
+
+.mySwiper3 {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide-3 {
+  width: 306px !important;
+  height: 433px !important;
+}
+.swiper-slide-6 {
+  width: 196px !important;
+  height: 104px !important;
+}
+.course-box-size{
+  @include mobile{
+    // width: 100% !important;
+    // height: 100% !important;
+    width: 272px !important;
+    height: 104px !important;
+  }
+}
+.min-w{
+  @include mobile{
+    width: 1296px;
+  }
+}
+
+.w-fit-content-mb{
+  @include mobile{
+   width: fit-content;
+  }
+}
+.line-1-pos{
+  width: 150% !important;
+  // width: 150vw !important;
+  top: 200px;
+  height: 452px;
+  left: -20px;
+  // right: -40px;
+  // right: 0;
+}
+.pos{
+  top: -50px;
+}
+.top-sm{
+  top: -100px;
+}
+.overflow-h{
+  overflow: hidden;
+}
+.ac-e{
+  align-content: end;
+}
+.dropdown-item-primary{
+  color: $gray-80;
+  width: fit-content;
+  &:hover{
+    background: $primary !important;
+    color: white !important;
+    border-radius: 12px !important;
+    >.img-gray{
+      filter: invert(100%) sepia(1%) saturate(3931%) hue-rotate(50deg) brightness(124%) contrast(95%);
+    }    
+  }
+}
+.img-gray{
+  filter: invert(72%) sepia(7%) saturate(16%) hue-rotate(314deg) brightness(80%) contrast(76%);
+}
+.img-primary-10{
+  // filter: invert(100%) sepia(49%) saturate(5751%) hue-rotate(177deg) brightness(109%) contrast(101%);
+}
+.min-width-0 {
+  min-width: 0;
+}
+.notifications:active{
+  background: $gray-10;
+  border-radius: 12px;
+}
+.message-style{
+  border: 2px solid red;
+   a:visited{
+    background: white !important;
+  }
+}
+.material-symbols-outlined.fill{
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.top-minus-95{
+  top: -95px;
+  left: -48px;
+  z-index: 1 !important;
+}
+.pos-course-flower{
+  right: 24px;
+  top: 100px;
+  @include mobile{
+    top: 0;
+    right: -65px;
+    width: 240px;
+    height: 240px;
+  }
+}
+.pos-polugon{
+  z-index: 20 !important;
+  top: 80px;
+  left: 150px;
+  @include mobile{
+    top: 40px;
+    left: 12px;
+  }
+}
+.pos-polugon-2{
+  z-index: 20 !important;
+  top: 40px;
+  right: 360px;
+}
+.nav-link.nav-link-style.active{
+  // &::after{
+  //   content: "f";
+  //   width: 32px;
+  //   height: 4px;
+  //   color: red;
+  //   background: red;
+  // }
+  border-bottom: 4px solid $primary;
+  color: $primary !important;
+  font-weight: 600;
+}
+.background-img::after{
+  content: "";
+  display: block;
+  background-image: url("../images/deco/flower-2.png");
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+  @include desktop{
+    width: 560px;
+    height: 560px;
+  }
+}
+.background-img-2::after{
+  content: "";
+  display: none;
+  background-image: url("../images/deco/flower-3.png");
+  background-size: contain;
+  position: absolute;
+  left: -240px;
+  bottom: 114px;
+  // width: 200px;
+  // height: 200px;
+  @include desktop{
+    display: block;
+    width: 480px;
+    height: 480px;
+  }
+}
+.background-img-3::after{
+  // outline: 1px solid red;
+  content: "";
+  display: block;
+  background-image: url("../images/deco/line-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 200px;
+  right: 0;
+  @include desktop{
+    width: 100vw;
+    height: 452px;
+  }
+}
+.card-width{
+  max-width: 416px;
+}
+.mt-minus-40{
+  margin-top: -40px;
+}
+.border-top-4{
+  border-radius: 12px 12px 0  0;
+}
+.card-teacher-size{
+  max-width: 327px;
+  max-height: 378px;
+}
+.pagination-m{
+  // // background: darkblue;
+  // &.page-link{
+  //   border-radius: 8px !important;
+  //   background: red !important;
+  // }
 }
